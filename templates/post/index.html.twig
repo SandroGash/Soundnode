@@ -1,0 +1,12 @@
+    {% extends "base.html.twig" %}
+
+    {% block body %}
+
+            {% if age > 18 %}
+                <p>Vous êtes majeur</p>
+            {% else %}
+                <p>Vous êtes mineur</p>
+            {% endif %}
+
+            Vous avez {{ age }} ans.
+    {% endblock %}
