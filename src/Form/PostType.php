@@ -9,7 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\component\Validator\Constraints\Url;
+use Symfony\Component\Validator\Constraints\Url;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
@@ -33,7 +33,7 @@ class PostType extends AbstractType {
                 ->add("image", UrlType::class, [
                         "label" => "L'URL de l'image",
                          "required" => false,
-                         'constraints' =>[new Url(['message' => "L'image doit être une URL valide"])],
+                         'constraints' => [new Url(['message' => "L'image doit être une URL valide"])]
                         ]);   
         
             
